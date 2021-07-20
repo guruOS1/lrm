@@ -7,4 +7,4 @@ WORKDIR /app
 COPY app2.py /app/app.py
 COPY lrm/model /app/model/
 
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "--server.address", "0.0.0.0", "app.py" ]
